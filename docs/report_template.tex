@@ -1,0 +1,45 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=1.55cm]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{caption}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+
+\begin{document}
+
+\begin{center}
+{\Large \textbf{[Project title]}}\\
+[Author name] \quad [Date]
+\end{center}
+
+\textbf{Task.} [Concise statement of the scalar excitonic-coupling regression task and the supplied data boundary.]
+
+\textbf{Selected method.} [Coulomb-matrix construction, pair representation, KRR pipeline, and selected hyperparameters.]
+
+\textbf{Validation protocol.} [Random or geometry-aware split; fixed seed; train/validation/test roles; repeated learning-curve procedure.]
+
+\begin{center}
+\fbox{\parbox[c][3.0cm][c]{0.88\linewidth}{\centering
+Placeholder for \texttt{outputs/figures/learning\_curve\_loglog.pdf}\\
+Generate locally before inclusion.}}
+\captionof{figure}{Double-logarithmic learning curve: training pair count versus validation MAE.}
+\end{center}
+
+\textbf{Selected hyperparameters.} [Insert only values chosen by training/validation search.]
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+Configuration & Validation MAE & Held-out test MAE \\
+\midrule
+[Baseline] & [generated] & [generated] \\
+[Selected KRR] & [generated] & [generated] \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Limitations.} [Dataset-specific limitations, descriptor limitations, split interpretation, KRR computational constraints, and statement that results come from locally executed code.]
+
+\end{document}
