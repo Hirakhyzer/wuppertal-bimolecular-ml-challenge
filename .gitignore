@@ -1,0 +1,20 @@
+# Raw challenge data must stay local unless explicit permission is granted.
+data/raw/
+
+# Generated outputs and experiment artifacts
+outputs/data_summary.json
+outputs/results/*
+outputs/figures/*
+!outputs/.gitkeep
+
+# Python and notebooks
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.ipynb_checkpoints/
+
+# OS and editor files
+.DS_Store
+.vscode/
+.idea/
