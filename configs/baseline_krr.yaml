@@ -1,0 +1,26 @@
+# Fill schema fields only after scripts/inspect_data.py has examined the real CSV.
+seed: 2026
+paths:
+  raw_dir: data/raw
+  output_dir: outputs
+schema:
+  target_column: null
+  pair_a_column: null
+  pair_b_column: null
+  # Confirm whether identifiers are zero-based/one-based frame indices, labels,
+  # or another mapping before implementing dataset assembly.
+  geometry_reference_scheme: null
+representation:
+  coulomb_ordering: row_norm_with_signature_tiebreak
+  max_atoms: null  # infer from TRAINING geometries only after inspection
+  vectorization: upper_triangle_including_diagonal
+  pair_feature_mode: directed_concatenation
+split:
+  strategy: random_pair
+  validation_fraction: 0.2
+  test_fraction: 0.2
+model:
+  name: kernel_ridge_rbf
+  alpha_candidates: [0.000001, 0.0001, 0.01, 1.0]
+  gamma_candidates: [0.000001, 0.0001, 0.01, 1.0]
+  max_krr_train_samples: 4000
