@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="620" viewBox="0 0 1440 620" role="img" aria-labelledby="title desc">
+  <title id="title">Reproducible research lifecycle</title>
+  <desc id="desc">A conceptual lifecycle from local file inspection to executable experiment outputs and a placeholder-only final report.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1"><stop stop-color="#111827"/><stop offset="1" stop-color="#172f45"/></linearGradient>
+    <linearGradient id="blue" x1="0" x2="1"><stop stop-color="#4b9cff"/><stop offset="1" stop-color="#50d1c5"/></linearGradient>
+    <linearGradient id="pink" x1="0" x2="1"><stop stop-color="#db6b9f"/><stop offset="1" stop-color="#f0ae70"/></linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#9cc4db"/></marker>
+    <style>.h{font-family:Arial,Helvetica,sans-serif;font-size:31px;font-weight:700;fill:#f8fbff}.s{font-family:Arial,Helvetica,sans-serif;font-size:16px;fill:#b7cedc}.n{font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;fill:#102030}.t{font-family:Arial,Helvetica,sans-serif;font-size:18px;font-weight:700;fill:#f8fbff}.b{font-family:Arial,Helvetica,sans-serif;font-size:13px;fill:#c5d9e5}.note{font-family:Arial,Helvetica,sans-serif;font-size:12px;fill:#9ab5c7}</style>
+  </defs>
+  <rect width="1440" height="620" fill="url(#bg)"/>
+  <path d="M0 470 C250 350 420 620 700 460 S1140 330 1440 490" fill="none" stroke="#2e5970" stroke-width="2" opacity=".55"/>
+  <text x="70" y="76" class="h">Reproducible research lifecycle</text>
+  <text x="70" y="108" class="s">Each stage creates inspectable artifacts. The report is populated only after local execution has produced evidence.</text>
+  <line x1="70" y1="138" x2="1370" y2="138" stroke="#31546a"/>
+  <g>
+    <circle cx="165" cy="318" r="66" fill="url(#blue)"/><text x="150" y="323" class="n">01</text>
+    <text x="105" y="415" class="t">Inspect</text><text x="85" y="442" class="b">XYZ frames • CSV schema</text><text x="68" y="464" class="note">outputs/data_summary.json</text>
+    <circle cx="415" cy="318" r="66" fill="#4f7fca"/><text x="400" y="323" class="n">02</text>
+    <text x="345" y="415" class="t">Confirm mapping</text><text x="340" y="442" class="b">A/B IDs → XYZ frames</text><text x="320" y="464" class="note">configuration becomes explicit</text>
+    <circle cx="665" cy="318" r="66" fill="#7086d8"/><text x="650" y="323" class="n">03</text>
+    <text x="584" y="415" class="t">Represent</text><text x="553" y="442" class="b">Coulomb matrices • pair vectors</text><text x="553" y="464" class="note">training-derived feature capacity</text>
+    <circle cx="915" cy="318" r="66" fill="url(#pink)"/><text x="900" y="323" class="n">04</text>
+    <text x="845" y="415" class="t">Validate</text><text x="810" y="442" class="b">Splits • KRR grid • MAE</text><text x="812" y="464" class="note">test set stays untouched</text>
+    <circle cx="1165" cy="318" r="66" fill="#e29b72"/><text x="1150" y="323" class="n">05</text>
+    <text x="1085" y="415" class="t">Communicate</text><text x="1052" y="442" class="b">Learning curve • JSON • LaTeX</text><text x="1047" y="464" class="note">only generated figures and metrics</text>
+  </g>
+  <path d="M235 318 H341" stroke="#9cc4db" stroke-width="3" marker-end="url(#arr)"/><path d="M485 318 H591" stroke="#9cc4db" stroke-width="3" marker-end="url(#arr)"/><path d="M735 318 H841" stroke="#9cc4db" stroke-width="3" marker-end="url(#arr)"/><path d="M985 318 H1091" stroke="#9cc4db" stroke-width="3" marker-end="url(#arr)"/>
+  <rect x="260" y="520" width="920" height="48" rx="16" fill="#203c51" stroke="#3f647b"/>
+  <text x="300" y="550" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;fill:#edf8ff">Research integrity rule:</text>
+  <text x="474" y="550" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;fill:#c8dfeb">never infer a schema, report a number, or include a result figure before executable local analysis produces it.</text>
+</svg>
