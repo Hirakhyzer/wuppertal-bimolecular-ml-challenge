@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="760" viewBox="0 0 1440 760" role="img" aria-labelledby="title desc">
+  <title id="title">Bi-molecular machine-learning system architecture</title>
+  <desc id="desc">Conceptual workflow from local XYZ and CSV files through inspection, Coulomb representations, pair features, leakage-aware evaluation, and locally generated outputs.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#071321"/><stop offset="1" stop-color="#10283b"/></linearGradient>
+    <linearGradient id="panel" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#173650"/><stop offset="1" stop-color="#10293f"/></linearGradient>
+    <linearGradient id="cyan" x1="0" x2="1"><stop stop-color="#33d6d1"/><stop offset="1" stop-color="#68a9ff"/></linearGradient>
+    <linearGradient id="amber" x1="0" x2="1"><stop stop-color="#ffd36d"/><stop offset="1" stop-color="#ff9d66"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity=".28"/></filter>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto"><path d="M 0 0 L 12 6 L 0 12 z" fill="#93c8e0"/></marker>
+    <style>
+      .h1{font-family:Arial,Helvetica,sans-serif;font-size:34px;font-weight:700;fill:#f6fbff}.sub{font-family:Arial,Helvetica,sans-serif;font-size:16px;fill:#b8d4e3}.tag{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;letter-spacing:1px;fill:#6ce1df}.boxTitle{font-family:Arial,Helvetica,sans-serif;font-size:18px;font-weight:700;fill:#f6fbff}.body{font-family:Arial,Helvetica,sans-serif;font-size:14px;fill:#c9dce8}.tiny{font-family:Arial,Helvetica,sans-serif;font-size:12px;fill:#9bb9ca}.math{font-family:Georgia,serif;font-size:17px;fill:#ffe7a7}.number{font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;fill:#071321}
+    </style>
+  </defs>
+  <rect width="1440" height="760" fill="url(#bg)"/>
+  <circle cx="1310" cy="85" r="180" fill="#1d4961" opacity=".32"/><circle cx="122" cy="690" r="205" fill="#0d5a68" opacity=".2"/>
+  <text x="70" y="78" class="h1">Bi-molecular regression research architecture</text>
+  <text x="70" y="110" class="sub">Conceptual system diagram — actual schema, units, and results remain unresolved until local data inspection.</text>
+  <line x1="70" y1="139" x2="1370" y2="139" stroke="#2b5670" stroke-width="1"/>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="190" width="250" height="210" rx="18" fill="url(#panel)" stroke="#32607b"/>
+    <rect x="94" y="214" width="42" height="26" rx="13" fill="url(#cyan)"/><text x="109" y="233" class="number">01</text>
+    <text x="94" y="273" class="boxTitle">Local challenge data</text>
+    <text x="94" y="304" class="body">Coord_A.xyz</text><text x="94" y="329" class="body">Coord_B.xyz</text><text x="94" y="354" class="body">CouplingEnergies.csv</text>
+    <text x="94" y="383" class="tiny">Untracked in Git • optional supermolecule file</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="390" y="190" width="250" height="210" rx="18" fill="url(#panel)" stroke="#32607b"/>
+    <rect x="414" y="214" width="42" height="26" rx="13" fill="url(#cyan)"/><text x="429" y="233" class="number">02</text>
+    <text x="414" y="273" class="boxTitle">Inspection &amp; mapping</text>
+    <text x="414" y="304" class="body">Strict concatenated-XYZ parsing</text>
+    <text x="414" y="329" class="body">CSV schema and quality checks</text>
+    <text x="414" y="354" class="body">Confirmed pair-to-frame mapping</text>
+    <text x="414" y="383" class="tiny">No model run before schema confirmation</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="710" y="190" width="250" height="210" rx="18" fill="url(#panel)" stroke="#32607b"/>
+    <rect x="734" y="214" width="42" height="26" rx="13" fill="url(#cyan)"/><text x="749" y="233" class="number">03</text>
+    <text x="734" y="273" class="boxTitle">Molecular descriptors</text>
+    <text x="734" y="304" class="body">Canonical Coulomb matrices</text>
+    <text x="734" y="329" class="body">Training-derived padding</text>
+    <text x="734" y="354" class="math">Cᵢᵢ = 0.5 Zᵢ²·⁴</text>
+    <text x="734" y="383" class="tiny">Upper-triangular fixed-length vectors</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1030" y="190" width="340" height="210" rx="18" fill="url(#panel)" stroke="#32607b"/>
+    <rect x="1054" y="214" width="42" height="26" rx="13" fill="url(#cyan)"/><text x="1069" y="233" class="number">04</text>
+    <text x="1054" y="273" class="boxTitle">Directed bi-molecular representation</text>
+    <text x="1054" y="304" class="body">[ A, B ]</text>
+    <text x="1054" y="329" class="body">[ A, B, |A−B|, A⊙B ]</text>
+    <text x="1054" y="354" class="body">No assumed A/B exchange symmetry</text>
+    <text x="1054" y="383" class="tiny">Reverse-pair diagnostic after CSV confirmation</text>
+  </g>
+
+  <path d="M320 295 H382" stroke="#93c8e0" stroke-width="3" marker-end="url(#arrow)"/><path d="M640 295 H702" stroke="#93c8e0" stroke-width="3" marker-end="url(#arrow)"/><path d="M960 295 H1022" stroke="#93c8e0" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="120" y="500" width="350" height="180" rx="18" fill="#123a4a" stroke="#3d8f9a"/>
+    <text x="146" y="537" class="tag">LEAKAGE-RESISTANT EVALUATION</text>
+    <text x="146" y="575" class="boxTitle">Two complementary split regimes</text>
+    <text x="146" y="606" class="body">Random pair baseline — optimistic reference</text>
+    <text x="146" y="632" class="body">Geometry-aware split — held-out structures excluded</text>
+    <text x="146" y="657" class="tiny">Validation only selects α and γ; test remains fixed.</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="545" y="500" width="350" height="180" rx="18" fill="#3d3044" stroke="#906eaa"/>
+    <text x="571" y="537" class="tag" fill="#ffd99b">KERNEL-RIDGE BENCHMARK</text>
+    <text x="571" y="575" class="boxTitle">Pipeline(StandardScaler → RBF KRR)</text>
+    <text x="571" y="606" class="body">Grid over α and γ on train/validation only</text>
+    <text x="571" y="632" class="body">Explicit maximum training size for exact kernels</text>
+    <text x="571" y="657" class="tiny">Gaussian Process comparison remains an extension point.</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="970" y="500" width="350" height="180" rx="18" fill="#453824" stroke="#bb9250"/>
+    <text x="996" y="537" class="tag" fill="#ffe3a1">REPRODUCIBLE OUTPUTS</text>
+    <text x="996" y="575" class="boxTitle">Locally generated evidence only</text>
+    <text x="996" y="606" class="body">Data summary • selected settings • MAE</text>
+    <text x="996" y="632" class="body">Repeated log–log learning curve • report inputs</text>
+    <text x="996" y="657" class="tiny">No metrics or figures are committed before execution.</text>
+  </g>
+
+  <path d="M1200 401 C1200 447 1145 456 1145 490" fill="none" stroke="#ffd36d" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M1200 401 C1200 447 720 456 720 490" fill="none" stroke="#ffd36d" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M1200 401 C1200 447 295 456 295 490" fill="none" stroke="#ffd36d" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <text x="70" y="725" class="tiny">Conceptual architecture only. It intentionally contains no claim about the supplied dataset, target units, or achieved performance.</text>
+</svg>
