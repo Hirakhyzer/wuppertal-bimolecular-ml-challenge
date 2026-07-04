@@ -1,0 +1,30 @@
+# Uses the same real schema mapping that must be confirmed after inspection.
+seed: 2026
+paths:
+  raw_dir: data/raw
+  output_dir: outputs
+schema:
+  target_column: null
+  pair_a_column: null
+  pair_b_column: null
+  geometry_reference_scheme: null
+representation:
+  coulomb_ordering: row_norm_with_signature_tiebreak
+  max_atoms: null
+  vectorization: upper_triangle_including_diagonal
+  pair_feature_mode: interaction_features
+split:
+  strategy: random_pair
+  validation_fraction: 0.2
+  test_fraction: 0.2
+model:
+  name: kernel_ridge_rbf
+  alpha_candidates: [0.000001, 0.0001, 0.01, 1.0]
+  gamma_candidates: [0.000001, 0.0001, 0.01, 1.0]
+  max_krr_train_samples: 4000
+learning_curve:
+  requested_training_sizes: [100, 250, 500, 1000, 2000, 4000]
+  repeat_seeds: [2026, 2027, 2028]
+  output_csv: outputs/results/learning_curve_results.csv
+  output_png: outputs/figures/learning_curve_loglog.png
+  output_pdf: outputs/figures/learning_curve_loglog.pdf
