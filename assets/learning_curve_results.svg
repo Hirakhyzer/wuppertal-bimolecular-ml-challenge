@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520" role="img" aria-labelledby="title desc">
+<title id="title">Double-logarithmic learning curve for bi-molecular Kernel Ridge Regression</title>
+<desc id="desc">Held-out test MAE declines from 15.504 at 100 training pairs to 0.135 at 8000 training pairs.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<rect x="95" y="65" width="865" height="370" rx="12" fill="#f8fafc" stroke="#dbe4ee"/>
+<text x="95" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#102a43">Data-derived learning curve</text>
+<text x="95" y="55" font-family="Arial, sans-serif" font-size="14" fill="#486581">RBF Kernel Ridge Regression • fixed 8,000-pair held-out test set • log–log axes</text>
+<line x1="95" y1="435.0" x2="960" y2="435.0" stroke="#d9e2ec" stroke-width="1"/><text x="83" y="440.0" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#627d98">0.1</text>
+<line x1="95" y1="400.8" x2="960" y2="400.8" stroke="#d9e2ec" stroke-width="1"/><text x="83" y="405.8" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#627d98">0.2</text>
+<line x1="95" y1="366.1" x2="960" y2="366.1" stroke="#d9e2ec" stroke-width="1"/><text x="83" y="371.1" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#627d98">0.5</text>
+<line x1="95" y1="331.9" x2="960" y2="331.9" stroke="#d9e2ec" stroke-width="1"/><text x="83" y="336.9" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#627d98">1</text>
+<line x1="95" y1="297.7" x2="960" y2="297.7" stroke="#d9e2ec" stroke-width="1"/><text x="83" y="302.7" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#627d98">2</text>
+<line x1="95" y1="263.0" x2="960" y2="263.0" stroke="#d9e2ec" stroke-width="1"/><text x="83" y="268.0" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#627d98">5</text>
+<line x1="95" y1="228.8" x2="960" y2="228.8" stroke="#d9e2ec" stroke-width="1"/><text x="83" y="233.8" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#627d98">10</text>
+<line x1="95" y1="194.6" x2="960" y2="194.6" stroke="#d9e2ec" stroke-width="1"/><text x="83" y="199.6" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#627d98">20</text>
+<line x1="95.0" y1="65" x2="95.0" y2="435" stroke="#e8eef5" stroke-width="1"/><text x="95.0" y="459" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#627d98">100</text>
+<line x1="275.9" y1="65" x2="275.9" y2="435" stroke="#e8eef5" stroke-width="1"/><text x="275.9" y="459" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#627d98">250</text>
+<line x1="412.7" y1="65" x2="412.7" y2="435" stroke="#e8eef5" stroke-width="1"/><text x="412.7" y="459" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#627d98">500</text>
+<line x1="549.5" y1="65" x2="549.5" y2="435" stroke="#e8eef5" stroke-width="1"/><text x="549.5" y="459" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#627d98">1,000</text>
+<line x1="686.3" y1="65" x2="686.3" y2="435" stroke="#e8eef5" stroke-width="1"/><text x="686.3" y="459" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#627d98">2,000</text>
+<line x1="823.2" y1="65" x2="823.2" y2="435" stroke="#e8eef5" stroke-width="1"/><text x="823.2" y="459" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#627d98">4,000</text>
+<line x1="960.0" y1="65" x2="960.0" y2="435" stroke="#e8eef5" stroke-width="1"/><text x="960.0" y="459" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#627d98">8,000</text>
+<line x1="95" y1="435" x2="960" y2="435" stroke="#243b53" stroke-width="2"/><line x1="95" y1="65" x2="95" y2="435" stroke="#243b53" stroke-width="2"/>
+<polyline points="95.0,82.8 275.9,107.9 412.7,132.4 549.5,182.9 686.3,259.2 823.2,350.0 960.0,414.1" fill="none" stroke="#0f766e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="95.0" cy="82.8" r="6" fill="#ffffff" stroke="#0f766e" stroke-width="4"/><circle cx="275.9" cy="107.9" r="6" fill="#ffffff" stroke="#0f766e" stroke-width="4"/><circle cx="412.7" cy="132.4" r="6" fill="#ffffff" stroke="#0f766e" stroke-width="4"/><circle cx="549.5" cy="182.9" r="6" fill="#ffffff" stroke="#0f766e" stroke-width="4"/><circle cx="686.3" cy="259.2" r="6" fill="#ffffff" stroke="#0f766e" stroke-width="4"/><circle cx="823.2" cy="350.0" r="6" fill="#ffffff" stroke="#0f766e" stroke-width="4"/><circle cx="960.0" cy="414.1" r="6" fill="#ffffff" stroke="#0f766e" stroke-width="4"/>
+<rect x="102" y="54" width="55" height="22" rx="6" fill="#0f766e"/><text x="114" y="70" text-anchor="start" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#ffffff">15.504</text>
+<rect x="905" y="382" width="55" height="22" rx="6" fill="#0f766e"/><text x="951" y="398" text-anchor="end" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#ffffff">0.135</text>
+<text x="527.5" y="493" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#243b53">Number of training bi-molecular pairs</text>
+<text x="25" y="250" transform="rotate(-90 25 250)" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#243b53">Held-out test MAE</text>
+</svg>
