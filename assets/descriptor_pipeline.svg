@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="600" viewBox="0 0 1440 600" role="img" aria-labelledby="title desc">
+  <title id="title">Coulomb matrix and directed pair descriptor pipeline</title>
+  <desc id="desc">Conceptual diagram of two molecular geometries transformed into canonical Coulomb matrices, upper triangular vectors, and directed pair features.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f9fbff"/><stop offset="1" stop-color="#f6f2ff"/></linearGradient>
+    <linearGradient id="left" x1="0" x2="1"><stop stop-color="#4e8dde"/><stop offset="1" stop-color="#60c9c0"/></linearGradient>
+    <linearGradient id="right" x1="0" x2="1"><stop stop-color="#8f6ee8"/><stop offset="1" stop-color="#d26eb1"/></linearGradient>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto"><path d="M0 0 L12 6 L0 12 z" fill="#6d8199"/></marker>
+    <style>.h{font-family:Arial,Helvetica,sans-serif;font-size:30px;font-weight:700;fill:#193048}.s{font-family:Arial,Helvetica,sans-serif;font-size:15px;fill:#60788e}.t{font-family:Arial,Helvetica,sans-serif;font-size:17px;font-weight:700;fill:#193048}.b{font-family:Arial,Helvetica,sans-serif;font-size:13px;fill:#516b82}.code{font-family:Menlo,Consolas,monospace;font-size:15px;fill:#284158}.white{font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:700;fill:#fff}</style>
+  </defs>
+  <rect width="1440" height="600" fill="url(#bg)"/>
+  <text x="70" y="68" class="h">Descriptor construction: geometry → Coulomb matrix → directed pair vector</text>
+  <text x="70" y="99" class="s">Conceptual representation diagram. Chemical content, atom count, and units are supplied by local inspection, not inferred here.</text>
+  <line x1="70" y1="130" x2="1370" y2="130" stroke="#d8e5ef"/>
+
+  <rect x="70" y="190" width="240" height="250" rx="22" fill="#fff" stroke="#c7d9e5"/>
+  <text x="100" y="226" class="t">Role A geometry</text>
+  <circle cx="155" cy="305" r="30" fill="#55b8b4"/><circle cx="237" cy="274" r="21" fill="#4e8dde"/><circle cx="226" cy="365" r="27" fill="#f0ab61"/>
+  <line x1="175" y1="293" x2="219" y2="280" stroke="#7992a5" stroke-width="3"/><line x1="178" y1="327" x2="210" y2="349" stroke="#7992a5" stroke-width="3"/><line x1="237" y1="295" x2="229" y2="338" stroke="#7992a5" stroke-width="3"/>
+  <text x="100" y="412" class="b">symbols + Cartesian coordinates</text>
+
+  <rect x="70" y="465" width="240" height="62" rx="16" fill="url(#left)"/><text x="109" y="503" class="white">Coulomb matrix A</text>
+
+  <rect x="400" y="190" width="240" height="250" rx="22" fill="#fff" stroke="#c7d9e5"/>
+  <text x="430" y="226" class="t">Role B geometry</text>
+  <circle cx="485" cy="330" r="30" fill="#d26eb1"/><circle cx="568" cy="274" r="21" fill="#8f6ee8"/><circle cx="568" cy="373" r="27" fill="#f0ab61"/>
+  <line x1="507" y1="315" x2="549" y2="286" stroke="#7992a5" stroke-width="3"/><line x1="508" y1="345" x2="548" y2="365" stroke="#7992a5" stroke-width="3"/><line x1="568" y1="295" x2="568" y2="345" stroke="#7992a5" stroke-width="3"/>
+  <text x="430" y="412" class="b">symbols + Cartesian coordinates</text>
+
+  <rect x="400" y="465" width="240" height="62" rx="16" fill="url(#right)"/><text x="439" y="503" class="white">Coulomb matrix B</text>
+
+  <path d="M310 340 H358 V240 H695" fill="none" stroke="#6d8199" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M640 340 H695" fill="none" stroke="#6d8199" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="720" y="180" width="270" height="360" rx="22" fill="#fff" stroke="#c7d9e5"/>
+  <text x="750" y="217" class="t">Canonical molecular features</text>
+  <text x="750" y="252" class="code">Cᵢᵢ = 0.5 Zᵢ²·⁴</text>
+  <text x="750" y="282" class="code">Cᵢⱼ = ZᵢZⱼ / ‖Rᵢ−Rⱼ‖</text>
+  <rect x="750" y="313" width="86" height="86" rx="5" fill="#edf7fb" stroke="#78a9c1"/>
+  <path d="M778 330 h42 M778 348 h42 M778 366 h42 M778 384 h42 M790 320 v70 M808 320 v70" stroke="#6396b2" stroke-width="2"/>
+  <text x="857" y="342" class="b">reorder rows/columns</text><text x="857" y="366" class="b">pad to training capacity</text><text x="857" y="390" class="b">flatten upper triangle</text>
+  <rect x="750" y="435" width="210" height="58" rx="12" fill="#f0f6fa"/><text x="772" y="470" class="code">a ∈ ℝᵈ , b ∈ ℝᵈ</text>
+
+  <path d="M990 360 H1055" stroke="#6d8199" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="1080" y="180" width="290" height="360" rx="22" fill="#19364e"/>
+  <text x="1110" y="220" class="white">Directed pair representation</text>
+  <text x="1110" y="260" style="font-family:Arial,Helvetica,sans-serif;font-size:13px;fill:#a9cbde">Option 1</text>
+  <rect x="1110" y="276" width="230" height="48" rx="10" fill="#254e69"/><text x="1131" y="307" style="font-family:Menlo,Consolas,monospace;font-size:15px;fill:#e6f6ff">[ a , b ]</text>
+  <text x="1110" y="365" style="font-family:Arial,Helvetica,sans-serif;font-size:13px;fill:#a9cbde">Option 2</text>
+  <rect x="1110" y="381" width="230" height="62" rx="10" fill="#254e69"/><text x="1131" y="408" style="font-family:Menlo,Consolas,monospace;font-size:14px;fill:#e6f6ff">[ a, b, |a−b|,</text><text x="1131" y="430" style="font-family:Menlo,Consolas,monospace;font-size:14px;fill:#e6f6ff">  a⊙b ]</text>
+  <text x="1110" y="489" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;fill:#a9cbde">A/B exchange symmetry is not assumed.</text>
+</svg>
